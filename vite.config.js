@@ -4,7 +4,7 @@ import handlebars from "vite-plugin-handlebars";
 export default {
   root: resolve(__dirname, "src"),
   build: {
-    outDir: "..",
+    outDir: "../dist",
     rollupOptions: {
       input: {
         main: new URL("./src/index.html", import.meta.url).pathname,
