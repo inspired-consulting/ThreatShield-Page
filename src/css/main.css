@@ -18,3 +18,21 @@ html {
 .ts-benefit-section {
   height: 50rem;
 }
+
+/* Initially hide animated icon */
+.ts-animated-icon {
+  display: none;
+}
+
+/* Show animated icon on card hover */
+.ts-hover-trigger:hover .ts-static-icon {
+  display: none;
+}
+
+.ts-hover-trigger:hover .ts-animated-icon {
+  display: block;
+}
+
+
+
+
