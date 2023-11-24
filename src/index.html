@@ -16,13 +16,13 @@
 
 <!-- HEADER -->
 
-<body class="bg-primary-900 tracking-normal leading-normal">
-  <header class="w-full h-full my-60 text-gray-100 font-light tracking-wide">
+<body class="bg-primary-900 tracking-wide leading-normal">
+  <header class="w-full h-screen my-60 text-gray-100 font-light tracking-wide">
     <img src="./img/header-bg-gardient.svg" alt=""
       class="w-full h-full object-cover object-center absolute inset-0 z-0">
     <div class="container mx-auto relative z-10">
       <h1 class="leading-[4.5rem] mt-[-4rem] text-7xl font-bold">
-        <span class="tracking-normal">Protect your business from security threats</span>
+        <span>Protect your business from security threats</span>
       </h1>
       <p class="text-2xl my-6">Identify and mitigate potential security threats with ThreatShield's threat modelling
         service</p>
@@ -30,7 +30,7 @@
         learn more about us? Send us an email.</button>
       <div class="mt-7">
         <a href="https://github.com/" class="hover:text-primary-900 underline underline-offset-2 flex items-center">
-          <img src="./github-mark/github-mark-white.png" alt="GitHub Logo" class="w-6 h-6 mr-2">
+          <img src="./logos/github-mark-white.png" alt="GitHub Logo" class="w-6 h-6 mr-2">
           Fork us on GitHub
         </a>
       </div>
@@ -38,49 +38,121 @@
   </header>
 
   <!-- PREVIEW WEB APP -->
-  <main class="container mx-auto text-primary-100">
-    <h2 class="text-4xl mb-8 font-bold">AI-Driven Threat Modeling & Intuitive Design </h2>
-      <p class="text-lg">We use AI to provide concrete examples instead of abstract documentation. Our approach ensures easily accessible guidance and actionable recommendations</p>
+  <main>
+    <section class="container mx-auto mt-[-18rem] mb-24 text-primary-100">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="mr-12">
+          <h2 class="text-4xl mb-8 font-bold">AI-Driven Threat Modeling & Intuitive Design </h2>
+          <p class="text-lg">We use AI to provide concrete examples instead of abstract documentation. Our approach
+            ensures easily accessible guidance and actionable recommendations.</p>
+        </div>
+        <img src="./img/preview-web-app.png" alt="Organisationsseite von ThreatShield">
+      </div>
+    </section>
+
+    <!-- LIST OF BENEFITS -->
+    <section class="w-full h-full pt-20 bg-gray-100 ts-benefit-section">
+      <h3 class="text-center text-primary-900 mb-4">YOUR BENEFITS</h3>
+      <h2 class="text-4xl mb-8 font-bold text-center text-primary-900">Stay one step ahead of potential threats</h2>
+      <div class="flex place-content-center pt-6">
+
+        <!-- CARD 1 -->
+        <div class="max-w-sm rounded overflow-hidden bg-gray-100 border-2 border-primary-200 mr-6">
+          <img src="./img/icons8-ai-64.png" alt="Roboter Icon" class="w-16 h-16 mx-auto my-4">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mx-auto my-4 text-primary-500" fill="none"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> -->
+          <div class="px-6 py-2">
+            <div class="font-bold text-xl mb-2 text-primary-900">Simplified Thread Identification</div>
+            <p class="text-gray-700 text-base">
+              Effortlessly pinpoint threats to your IT systems and assets. Our AI assistant ensures a smooth start to
+              your threat modeling journey.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+          </div>
+        </div>
+
+         <!-- CARD 2 -->
+         <div class="max-w-sm rounded overflow-hidden bg-gray-100 border-2 border-primary-200 mr-6">
+          <img src="./img/icons8-delete-shield-64.png" alt="Shield Icon" class="w-16 h-16 mx-auto my-4">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mx-auto my-4 text-primary-500" fill="none"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
+          </svg> -->
+          <div class="px-6 py-2">
+            <div class="font-bold text-xl mb-2 text-primary-900">Transparent Risks & Management</div>
+            <p class="text-gray-700 text-base">
+              Clearly define and manage your security risks and their countermeasures, ensuring informed and strategic decision-making.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="max-w-sm rounded overflow-hidden bg-gray-100 border-2 border-primary-200">
+          <img src="./img/icons8-staff-64.png" alt="Collaboration Icon" class="w-16 h-16 mx-auto my-4">
+         <!-- <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mx-auto my-4 text-primary-500" fill="none"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
+          </svg> -->
+          <div class="px-6 py-2">
+            <div class="font-bold text-xl mb-2 text-primary-900">Collaboration & Communication</div>
+            <p class="text-gray-700 text-base">
+              Enable effective collaboration across teams for proactive threat management, keeping all stakeholders aligned and informed.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <article class="bg-gray-100 text-primary-900">
 
 
 
-  
-      <img src="./img/preview-web-app.png" class="mt-6" alt="Organisationsseite von ThreatShield">
-   
+    </article>
   </main>
 
-    <h2 class="mt-3 mb-1">Enhance Your IT Security with ThreatShield</h2>
-    <p>At ThreatShield, we empower businesses and organizations to effectively identify, evaluate, and manage threats
-      and risks within their IT systems. Our comprehensive platform enables teams to collaborate seamlessly, whether
-      it's for the entire organization or a specific IT system. Here's how ThreatShield can transform your IT security
-    </p>
+  <h2 class="mt-3 mb-1">Enhance Your IT Security with ThreatShield</h2>
+  <p>At ThreatShield, we empower businesses and organizations to effectively identify, evaluate, and manage threats
+    and risks within their IT systems. Our comprehensive platform enables teams to collaborate seamlessly, whether
+    it's for the entire organization or a specific IT system. Here's how ThreatShield can transform your IT security
+  </p>
 
-    <h2 class="mt-3 mb-1">Define Systems</h2>
-    <p>Easily define the technical components, technologies, frameworks, libraries (BOM), and more that make up your
-      IT system.</p>
+  <h2 class="mt-3 mb-1">Define Systems</h2>
+  <p>Easily define the technical components, technologies, frameworks, libraries (BOM), and more that make up your
+    IT system.</p>
 
-    <h2 class="mt-3 mb-1">Capture Assets</h2>
-    <p>Identify and catalog the valuable assets within your IT system that require protection.</p>
+  <h2 class="mt-3 mb-1">Capture Assets</h2>
+  <p>Identify and catalog the valuable assets within your IT system that require protection.</p>
 
-    <h2 class="mt-3 mb-1">Identify Threats</h2>
-    <p>Effortlessly record potential threats that your IT system may face.</p>
+  <h2 class="mt-3 mb-1">Identify Threats</h2>
+  <p>Effortlessly record potential threats that your IT system may face.</p>
 
-    <h2 class="mt-3 mb-1">Derive Risks from Threats</h2>
-    <p>Automatically derive risks from the identified threats, providing you with a clear understanding of potential
-      vulnerabilities.</p>
+  <h2 class="mt-3 mb-1">Derive Risks from Threats</h2>
+  <p>Automatically derive risks from the identified threats, providing you with a clear understanding of potential
+    vulnerabilities.</p>
 
-    <h2 class="mt-3 mb-1">Manage Mitigations</h2>
-    <p>Obtain mitigation strategies to address identified risks.</p>
+  <h2 class="mt-3 mb-1">Manage Mitigations</h2>
+  <p>Obtain mitigation strategies to address identified risks.</p>
 
-    <h2 class="mt-3 mb-1">Generate Reports</h2>
-    <p>Coming soon: Generate reports to share with your team and stakeholders.</p>
+  <h2 class="mt-3 mb-1">Generate Reports</h2>
+  <p>Coming soon: Generate reports to share with your team and stakeholders.</p>
 
-    <h2 class="mt-3 mb-1">AI-Powered Suggestions</h2>
-    <p>Additionally, ThreatShield is powered by AI throughout the process.</p>
-    <p class="my-2">
-      Join the ranks of organisations that trust ThreatShield to bolster their IT security. Take advantage of our
-      AI-driven platform and structured approach to safeguarding your digital assets.
-    </p>
+  <h2 class="mt-3 mb-1">AI-Powered Suggestions</h2>
+  <p>Additionally, ThreatShield is powered by AI throughout the process.</p>
+  <p class="my-2">
+    Join the ranks of organisations that trust ThreatShield to bolster their IT security. Take advantage of our
+    AI-driven platform and structured approach to safeguarding your digital assets.
+  </p>
 
 
   {{> footer }}
