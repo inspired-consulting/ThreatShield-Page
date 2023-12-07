@@ -15,10 +15,6 @@ html {
   }
 }
 
-.ts-benefit-section {
-  height: 50rem;
-}
-
 /* Initially hide animated icon */
 .ts-animated-icon {
   display: none;
