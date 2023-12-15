@@ -18,170 +18,156 @@
 
 <body class="bg-primary-900 tracking-wide leading-normal">
 
-  <header class="w-full h-screen my-60 text-gray-100 font-light tracking-wide">
-    <img src="./img/header-bg-gardient.svg" alt=""
-      class="w-full h-full object-cover object-center absolute inset-0 z-0">
+  <header class="w-full pt-32 pb-40 px-8 text-gray-100 font-light relative">
+    <div class="absolute inset-0 z-0"
+      style="background-image: linear-gradient(90deg, rgba(102,69,232,1.00) 8%, rgba(126,73,244,1.00) 53%, rgba(149,74,244,1.00) 89%); background-position: center center; background-size: cover;">
+    </div>
     <div class="container mx-auto relative z-10">
-      <h1 class="leading-[4.5rem] mt-[-4rem] text-7xl font-bold">
-        <span>Protect your business from security threats</span>
+      <h1 class="leading-[3.5rem] text-5xl font-bold md:text-7xl lg:text-7xl xl:text-7xl sm:leading-[3.5rem] md:leading-[4.5rem]">
+        <span class="">Protect your business from security threats</span>
       </h1>
-      <p class="text-2xl mt-6 mb-12">Identify and mitigate potential security threats with ThreatShield's threat modelling
+      <p class="text-2xl mt-6 mb-12 md:text-3xl lg:text-3xl xl:text-3xl">Identify and mitigate potential security threats with ThreatShield's threat modelling
         service</p>
-        <a href="mailto:threatshield@inspired.consulting"
-              class="w-full bg-primary-900 text-white text-center racking-wider py-4 px-6 rounded hover:bg-primary-700">Want to
-              learn more about us? Send us an email.</a>
+      <a href="mailto:threatshield@inspired.consulting"
+        class="w-full bg-primary-900 text-white text-center racking-wider py-4 px-6 rounded hover:bg-primary-700">Want to
+        learn more about us? Send us an email.</a>
       <div class="mt-12">
         <span class="hover:text-primary-900">
           <img src="./logos/github-mark-white.png" alt="GitHub Logo" class="w-6 h-6 mx-1 inline-block">
-          <a href="https://github.com/" class="inline-block underline underline-offset-4">Fork us on GitHub</a>
-      </span>      
+          <a href="https://github.com/inspired-consulting/threat_shield" target="_blank" class="inline-block underline underline-offset-4">Fork us on GitHub</a>
+        </span>
       </div>
     </div>
   </header>
 
 
   <main>
+
     <!-- PREVIEW WEB APP -->
 
-    <section class="container mx-auto mt-[-18rem] mb-24 text-primary-100">
-      <div class="grid grid-cols-2 gap-4">
-        <div class="mr-12">
+    <section class="container mx-auto mt-24 mb-24 px-8 text-primary-100 ">
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="md:mr-12">
           <h2 class="text-4xl mb-8 font-bold">AI-Driven Threat Modeling & Intuitive Design </h2>
           <hr class="border-t-2 border-secondary-500 w-1/6 my-6">
-          <p class="text-lg">We use AI to provide concrete examples instead of abstract documentation. Our approach
-            ensures easily accessible guidance and actionable recommendations.</p>
+          <p class="text-lg">We use AI to provide concrete examples instead of abstract documentation. Our approach ensures easily accessible guidance and actionable recommendations.</p>
         </div>
-        <img src="./img/preview-web-app.png" alt="Organisationsseite von ThreatShield">
+        <img src="./img/preview-web-app.png" alt="Organisationsseite von ThreatShield" class="mt-4 md:col-start-2 sm:mt-6 lg:mt-0">
       </div>
-    </section>
+  </section>
+
 
     <!-- LIST OF BENEFITS -->
 
-    <section class="w-full h-full py-20 bg-gray-100">
+    <section class="w-full pt-20 pb-24 px-8 bg-gray-100">
       <h3 class="text-center text-primary-900 mb-4">YOUR BENEFITS</h3>
       <hr class="border-t-2 border-secondary-300 w-40 mx-auto my-4">
-      <h2 class="text-4xl mb-8 font-bold text-center text-primary-900 pt-2">Stay one step ahead of potential threats
-      </h2>
-      <div class="flex place-content-center pt-6">
-
+      <h2 class="text-4xl mb-8 font-bold text-center text-primary-900 pt-2">Stay one step ahead of potential threats</h2>
+      
+      <div class="flex flex-col md:flex-row md:justify-center px-auto md:items-stretch pt-6">
         <!-- CARD 1 -->
-        <div class="max-w-sm rounded overflow-hidden border-2 border-secondary-300 mr-6 ts-hover-trigger">
+        <div class="flex-shrink-0 max-w-sm rounded overflow-hidden border-2 border-secondary-300 mb-4 md:mb-0 md:mr-4 ts-hover-trigger">
           <img src="./img/roboter.png" alt="Roboter Icon" class="w-12 h-12 mx-auto my-6 ts-static-icon">
-
-          <!-- Animated GIF Icon (Initially Hidden) -->
           <img src="./img/roboter.gif" alt="Animated Icon" class="w-16 h-16 mx-auto my-4 ts-animated-icon">
-          <div class="px-6 py-2">
+          <div class="px-6 pt-2 pb-6 text-center">
             <div class="font-bold text-xl mb-2 text-primary-900">Simplified Thread Identification</div>
             <p class="text-gray-700 text-base">
               Effortlessly pinpoint threats to your IT systems and assets. Our AI assistant ensures a smooth start to
               your threat modeling journey.
             </p>
           </div>
-          <div class="px-6 pt-4 pb-2">
-          </div>
         </div>
-
+    
         <!-- CARD 2 -->
-        <div class="max-w-sm rounded overflow-hidden border-2 border-secondary-300 mr-6 ts-hover-trigger">
+        <div class="flex-shrink-0 max-w-sm rounded overflow-hidden border-2 border-secondary-300 mb-4 md:mb-0 md:mr-4 ts-hover-trigger">
           <img src="./img/schild.png" alt="Shield Icon" class="w-12 h-12 mx-auto my-6 ts-static-icon">
-
-          <!-- Animated GIF Icon (Initially Hidden) -->
           <img src="./img/schild.gif" alt="Animated Icon" class="w-16 h-16 mx-auto my-4 ts-animated-icon">
-          <div class="px-6 py-2">
+          <div class="px-6 pt-2 pb-6 text-center">
             <div class="font-bold text-xl mb-2 text-primary-900">Transparent Risks & Management</div>
             <p class="text-gray-700 text-base">
               Clearly define and manage your security risks and their countermeasures, ensuring informed and strategic
               decision-making.
             </p>
           </div>
-          <div class="px-6 pt-4 pb-2">
-          </div>
         </div>
-
+    
         <!-- CARD 3 -->
-        <div class="max-w-sm rounded overflow-hidden border-2 border-secondary-300 ts-hover-trigger">
+        <div class="flex-shrink-0 max-w-sm rounded overflow-hidden border-2 border-secondary-300 ts-hover-trigger">
           <img src="./img/zusammenarbeit.png" alt="Collaboration Icon" class="w-12 h-12 mx-auto my-6 ts-static-icon">
-
-          <!-- Animated GIF Icon (Initially Hidden) -->
           <img src="./img/zusammenarbeit.gif" alt="Animated Icon" class="w-16 h-16 mx-auto my-4 ts-animated-icon">
-          <div class="px-6 py-2">
+          <div class="px-6 pt-2 pb-6 text-center">
             <div class="font-bold text-xl mb-2 text-primary-900">Collaboration & Communication</div>
             <p class="text-gray-700 text-base">
               Enable effective collaboration across teams for proactive threat management, keeping all stakeholders
               aligned and informed.
             </p>
           </div>
-          <div class="px-6 pt-4 pb-2">
-          </div>
         </div>
       </div>
     </section>
+    
 
     <!-- HOW DOES IT WORK SECTION -->
 
-    <section class="w-full h-full py-20 bg-primary-200">
+    <section class="w-full pt-20 pb-24 bg-primary-200">
       <h3 class="text-center text-primary-900 mb-4">HOW DOES IT WORK</h3>
       <hr class="border-t-2 border-primary-300 w-48 mx-auto my-4">
       <h2 class="text-4xl mb-8 font-bold text-center text-primary-900 pt-2">3 simple steps</h2>
       <div class="flex place-content-center pt-6">
 
         <!-- CARD 1 -->
-        <div class="max-w-sm rounded overflow-hidden mr-6 px-6 py-2 bg-gray-100 bg-opacity-85">
 
+        <div class="max-w-sm rounded overflow-hidden mr-6 px-6 py-2 bg-gray-100 bg-opacity-85">
           <!-- Square with SVG -->
-          <div class="bg-primary-200 rounded-md w-8 my-6  mx-auto">
-            <!-- Your SVG code goes here -->
-            <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="58" height="58" rx="8" fill="#5426AA" />
-              <path d="M31.6374 19.5455V37H27.9471V23.0483H27.8448L23.8477 25.554V22.2812L28.1687 19.5455H31.6374Z"
-                fill="#F8F6FB" />
+          <div class="bg-primary-200 rounded-md w-8 my-6 mx-auto">
+
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 48px;">
+              <rect width="48" height="48" rx="8" fill="#5426AA"/>
+              <path d="M26.6374 14.5455V32H22.9471V18.0483H22.8448L18.8477 20.554V17.2812L23.1687 14.5455H26.6374Z" fill="#F8F6FB"/>
             </svg>
           </div>
           <div class="font-bold text-xl mb-2 text-primary-900 text-center">Initial Consultation</div>
           <p class="text-gray-700 pb-6">
             Reach out for a preliminary discussion, followed by scheduling our specialized threat modeling
-            workshop. Currently we provide these workshops free of charge!
+            workshop. Currently, we provide these workshops free of charge!
           </p>
         </div>
+        
 
         <!-- CARD 2 -->
         <div class="max-w-sm rounded overflow-hidden mr-6 px-6 py-2 bg-gray-100 bg-opacity-85">
-
           <!-- Square with SVG -->
           <div class="bg-primary-200 rounded-md w-8 my-6 mx-auto">
-            <!-- Your SVG code goes here -->
-            <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="58" height="58" rx="8" fill="#5426AA" />
+          
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 48px;">
+              <rect width="48" height="48" rx="8" fill="#5426AA" />
               <path
-                d="M22.3562 37V34.3409L28.5692 28.5881C29.0977 28.0767 29.5408 27.6165 29.8988 27.2074C30.2624 26.7983 30.538 26.3977 30.7255 26.0057C30.913 25.608 31.0067 25.179 31.0067 24.7188C31.0067 24.2074 30.8903 23.767 30.6573 23.3977C30.4244 23.0227 30.1062 22.7358 29.7028 22.5369C29.2994 22.3324 28.842 22.2301 28.3306 22.2301C27.7965 22.2301 27.3306 22.3381 26.9329 22.554C26.5352 22.7699 26.2283 23.0795 26.0124 23.483C25.7965 23.8864 25.6886 24.3665 25.6886 24.9233H22.1857C22.1857 23.7812 22.4442 22.7898 22.9613 21.9489C23.4783 21.108 24.2028 20.4574 25.1346 19.9972C26.0664 19.5369 27.1403 19.3068 28.3562 19.3068C29.6062 19.3068 30.6942 19.5284 31.6204 19.9716C32.5522 20.4091 33.2766 21.017 33.7937 21.7955C34.3107 22.5739 34.5692 23.4659 34.5692 24.4716C34.5692 25.1307 34.4386 25.7812 34.1772 26.4233C33.9215 27.0653 33.4641 27.7784 32.805 28.5625C32.146 29.3409 31.217 30.2756 30.0181 31.3665L27.4698 33.8636V33.983H34.7994V37H22.3562Z"
+                d="M17.3562 32V29.3409L23.5692 23.5881C24.0977 23.0767 24.5408 22.6165 24.8988 22.2074C25.2624 21.7983 25.538 21.3977 25.7255 21.0057C25.913 20.608 26.0067 20.179 26.0067 19.7188C26.0067 19.2074 25.8903 18.767 25.6573 18.3977C25.4244 18.0227 25.1062 17.7358 24.7028 17.5369C24.2994 17.3324 23.842 17.2301 23.3306 17.2301C22.7965 17.2301 22.3306 17.3381 21.9329 17.554C21.5352 17.7699 21.2283 18.0795 21.0124 18.483C20.7965 18.8864 20.6886 19.3665 20.6886 19.9233H17.1857C17.1857 18.7812 17.4442 17.7898 17.9613 16.9489C18.4783 16.108 19.2028 15.4574 20.1346 14.9972C21.0664 14.5369 22.1403 14.3068 23.3562 14.3068C24.6062 14.3068 25.6942 14.5284 26.6204 14.9716C27.5522 15.4091 28.2766 16.017 28.7937 16.7955C29.3107 17.5739 29.5692 18.4659 29.5692 19.4716C29.5692 20.1307 29.4386 20.7812 29.1772 21.4233C28.9215 22.0653 28.4641 22.7784 27.805 23.5625C27.146 24.3409 26.217 25.2756 25.0181 26.3665L22.4698 28.8636V28.983H29.7994V32H17.3562Z"
                 fill="#F8F6FB" />
             </svg>
           </div>
           <div class="font-bold text-xl mb-2 text-primary-900 text-center">Interactive Workshop</div>
           <p class="text-gray-700 pb-6">
-            Participate in a 2-hour hands-on workshop using your system as a case study to create an initial threat
-            model and learn how to effectively use ThreatShield.
+            Participate in a 2-hour hands-on workshop using your system as a case study to create an initial threat model and learn how to effectively use ThreatShield.
           </p>
         </div>
+        
 
         <!-- CARD 3 -->
         <div class="max-w-sm rounded overflow-hidden mr-6 px-6 py-2 bg-gray-100 bg-opacity-85">
-
           <!-- Square with SVG -->
           <div class="bg-primary-200 rounded-md w-8 my-6 mx-auto">
-            <!-- Your SVG code goes here -->
-            <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="58" height="58" rx="8" fill="#5426AA" />
+          
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 48px;">
+              <rect width="48" height="48" rx="8" fill="#5426AA" />
               <path
-                d="M28.4563 37.2386C27.1836 37.2386 26.0501 37.0199 25.0558 36.5824C24.0671 36.1392 23.2859 35.5312 22.712 34.7585C22.1438 33.9801 21.8512 33.0824 21.8342 32.0653H25.5501C25.5728 32.4915 25.712 32.8665 25.9677 33.1903C26.229 33.5085 26.5756 33.7557 27.0075 33.9318C27.4393 34.108 27.9251 34.196 28.4648 34.196C29.0273 34.196 29.5245 34.0966 29.9563 33.8977C30.3881 33.6989 30.7262 33.4233 30.9705 33.071C31.2148 32.7187 31.337 32.3125 31.337 31.8523C31.337 31.3864 31.2063 30.9744 30.945 30.6165C30.6893 30.2528 30.32 29.9687 29.837 29.7642C29.3597 29.5597 28.7915 29.4574 28.1325 29.4574H26.5046V26.7472H28.1325C28.6893 26.7472 29.1808 26.6506 29.6069 26.4574C30.0387 26.2642 30.3739 25.9972 30.6126 25.6562C30.8512 25.3097 30.9705 24.9062 30.9705 24.446C30.9705 24.0085 30.8654 23.625 30.6552 23.2955C30.4506 22.9602 30.1609 22.6989 29.7859 22.5114C29.4165 22.3239 28.9847 22.2301 28.4904 22.2301C27.9904 22.2301 27.533 22.321 27.1183 22.5028C26.7035 22.679 26.3711 22.9318 26.1211 23.2614C25.8711 23.5909 25.7376 23.9773 25.7205 24.4205H22.1836C22.2006 23.4148 22.4876 22.5284 23.0444 21.7614C23.6012 20.9943 24.3512 20.3949 25.2944 19.9631C26.2433 19.5256 27.3143 19.3068 28.5075 19.3068C29.712 19.3068 30.766 19.5256 31.6694 19.9716C32.5728 20.4006 33.2745 20.9915 33.7745 21.7358C34.2802 22.4744 34.5302 23.304 34.5245 24.2244C34.5302 25.2017 34.2262 26.017 33.6126 26.6705C33.0046 27.3239 32.212 27.7386 31.2347 27.9148V28.0511C32.5188 28.2159 33.4961 28.6619 34.1665 29.3892C34.8427 30.1108 35.1779 31.0142 35.1722 32.0994C35.1779 33.0938 34.891 33.9773 34.3114 34.75C33.7376 35.5227 32.945 36.1307 31.9336 36.5739C30.9222 37.017 29.7631 37.2386 28.4563 37.2386Z"
+                d="M23.4563 32.2386C22.1836 32.2386 21.0501 32.0199 20.0558 31.5824C19.0671 31.1392 18.2859 30.5312 17.712 29.7585C17.1438 28.9801 16.8512 28.0824 16.8342 27.0653H20.5501C20.5728 27.4915 20.712 27.8665 20.9677 28.1903C21.229 28.5085 21.5756 28.7557 22.0075 28.9318C22.4393 29.108 22.9251 29.196 23.4648 29.196C24.0273 29.196 24.5245 29.0966 24.9563 28.8977C25.3881 28.6989 25.7262 28.4233 25.9705 28.071C26.2148 27.7187 26.337 27.3125 26.337 26.8523C26.337 26.3864 26.2063 25.9744 25.945 25.6165C25.6893 25.2528 25.32 24.9687 24.837 24.7642C24.3597 24.5597 23.7915 24.4574 23.1325 24.4574H21.5046V21.7472H23.1325C23.6893 21.7472 24.1808 21.6506 24.6069 21.4574C25.0387 21.2642 25.3739 20.9972 25.6126 20.6562C25.8512 20.3097 25.9705 19.9062 25.9705 19.446C25.9705 19.0085 25.8654 18.625 25.6552 18.2955C25.4506 17.9602 25.1609 17.6989 24.7859 17.5114C24.4165 17.3239 23.9847 17.2301 23.4904 17.2301C22.9904 17.2301 22.533 17.321 22.1183 17.5028C21.7035 17.679 21.3711 17.9318 21.1211 18.2614C20.8711 18.5909 20.7376 18.9773 20.7205 19.4205H17.1836C17.2006 18.4148 17.4876 17.5284 18.0444 16.7614C18.6012 15.9943 19.3512 15.3949 20.2944 14.9631C21.2433 14.5256 22.3143 14.3068 23.5075 14.3068C24.712 14.3068 25.766 14.5256 26.6694 14.9631C27.5728 15.4006 28.2745 15.9915 28.7745 16.7358C29.2802 17.4744 29.5302 18.304 29.5245 19.2244C29.5302 20.2017 29.2262 21.017 28.6126 21.6705C28.0046 22.3239 27.212 22.7386 26.2347 22.9148V23.0511C27.5188 23.2159 28.4961 23.6619 29.1665 24.3892C29.8427 25.1108 30.1779 26.0142 30.1722 27.0994C30.1779 28.0938 29.891 28.9773 29.3114 29.75C28.7376 30.5227 27.945 31.1307 26.9336 31.5739C25.9222 32.017 24.7631 32.2386 23.4563 32.2386Z"
                 fill="#F8F6FB" />
             </svg>
           </div>
           <div class="font-bold text-xl mb-2 text-primary-900 text-center">Run ThreatShield yourself</div>
           <p class="text-gray-700 pb-6">
-            Easily set up ThreatShield on your own infrastructure and integrate it into your daily operations,
-            empowering
-            your team to manage threats autonomously.
+            Easily set up ThreatShield on your own infrastructure and integrate it into your daily operations, empowering your team to manage threats autonomously.
           </p>
         </div>
       </div>
