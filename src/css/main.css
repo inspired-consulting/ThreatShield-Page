@@ -3,33 +3,32 @@
 @tailwind utilities;
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 @layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
-  }
-  .btn-secondary {
-    @apply py-2 px-4 bg-blue-200 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
-  }
+    .btn-primary {
+        @apply py-2 px-4 bg-primary-500 text-white font-semibold rounded-lg shadow-md hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-opacity-75;
+    }
+    .btn-secondary {
+        @apply py-2 px-4 bg-gray-200 text-white font-semibold rounded-lg shadow-md hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-opacity-75;
+    }
 }
 
 /* Initially hide animated icon */
 .ts-animated-icon {
-  display: none;
+    display: none;
 }
 
 /* Show animated icon on card hover */
 .ts-hover-trigger:hover .ts-static-icon {
-  display: none;
+    display: none;
 }
 
 .ts-hover-trigger:hover .ts-animated-icon {
-  display: block;
+    display: block;
 }
 
 .icon-container {
-  height: 20px;
-
+    height: 20px;
 }
