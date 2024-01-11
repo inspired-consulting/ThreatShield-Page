@@ -17,32 +17,36 @@
 
 <!-- HEADER -->
 
-<body class="bg-primary-900 tracking-wide leading-normal">
+<body class="bg-primary-900 tracking-wide leading-160%">
 
-    <header class="w-full py-20 md:pt-32 md:pb-40 px-6 text-gray-100 font-light relative min-h-screen md:min-h-fit">
+    <header class="w-full pb-24 px-4 text-gray-100 font-light relative lg:pt-24">
         <div class="absolute inset-0 z-0"
             style="background-image: linear-gradient(90deg, rgba(102,69,232,1.00) 8%, rgba(126,73,244,1.00) 53%, rgba(149,74,244,1.00) 89%); background-position: center center; background-size: cover;">
         </div>
-        <div class="container mx-auto relative z-10 flex flex-col md:flex-row items-center">
-            <div class="mr-12 w-full md:w-1/2">
-                <img src="./img/shiba-hero.png" alt="Hero image" class="w-full h-auto md:h-full">
+        <!-- ThreatShield logo on smaller screens -->
+        <div class="container mx-auto relative z-10 flex flex-col lg:flex-row lg:items-center">
+            <img src="./logos/threatshield_white.svg" alt="ThreatShield Logo"
+                class="lg:hidden w-44 rounded-sm h-auto border-2 px-4 py-4 mt-6 mb-12">
+            <div class="mr-12 w-full h-full lg:w-1/2">
+                <img src="./img/shiba-hero.png" alt="Hero image" class="w-full h-full object-cover">
             </div>
-            <div class="w-full md:w-1/2">
+            <div class="w-full lg:w-1/2">
+                <!-- ThreatShield logo on larger screens -->
                 <img src="./logos/threatshield_white.svg" alt="ThreatShield Logo"
-                    class="w-40 rounded-sm h-auto border-2 px-4 py-4 mb-12 md:w-[12rem] xmx-auto">
-                <h1 class="leading-[3.5rem] text-4xl font-bold md:text-7xl sm:leading-[3.5rem] md:leading-[4.5rem]">
-                    <span class="">Protect your business from security threats</span>
+                    class="hidden lg:block w-44 rounded-sm h-auto border-2 px-4 py-4 my-12 lg:mt-0">
+                <h1 class="text-4xl w-full font-bold pt-10 lg:pt-0 md:text-5xl lg:text-6xl xl:text-7xl">
+                    Protect your business from security threats
                 </h1>
-                <p class="text-2xl mt-6 mb-12 md:text-3xl">
+                <p class="text-2xl font-light mt-6 mb-12 md:text-1xl lg:text-3xl">
                     Identify and mitigate potential security threats with ThreatShield's threat modelling service</p>
                 <a href="mailto:threatshield@inspired.consulting"
-                    class="w-full bg-primary-900 text-white text-center racking-wider py-4 px-6 rounded hover:bg-primary-700">
+                    class="bg-primary-900 text-white text-center tracking-wider py-4 px-6 rounded hover:bg-primary-700">
                     Send us an e-mail</a>
                 <div class="mt-12">
                     <span class="hover:text-primary-900">
                         <img src="./logos/github-mark-white.png" alt="GitHub Logo" class="w-6 h-6 mx-1 inline-block">
                         <a href="https://github.com/inspired-consulting/threat_shield" target="_blank"
-                            class="inline-block underline underline-offset-4 active:text-primary-100 visited:text-primary-100">
+                            class="inline-block underline underline-offset-4 active:text-primary-100 hover:primary-300">
                             Fork us on GitHub</a>
                     </span>
                 </div>
@@ -51,12 +55,11 @@
     </header>
 
 
-
     <main>
 
         <!-- PREVIEW WEB APP -->
 
-        <section class="container my-24 text-primary-100 px-6 md:px-4 md:mx-auto lg:px-4">
+        <section class="container my-24 text-primary-100 px-4 md:px-4 md:mx-auto lg:px-4">
             <div class="grid md:grid-cols-2 gap-4">
                 <div class="md:mr-12">
                     <h2 class="text-4xl mb-8 font-bold">AI-Driven Threat Modeling with Intuitive Design </h2>
@@ -73,7 +76,7 @@
 
         <!-- LIST OF BENEFITS -->
         <section class="w-full bg-gray-100">
-            <div class="container mx-auto pt-20 pb-24 px-8 bg-gray-100">
+            <div class="container mx-auto pt-20 pb-24 px-4 bg-gray-100">
                 <h3 class="text-center text-primary-900 mb-4 uppercase">Your benefits</h3>
                 <hr class="border-t-2 border-secondary-300 w-40 mx-auto my-4">
                 <h2 class="text-4xl mb-8 font-bold text-center text-primary-900 pt-2">
@@ -138,7 +141,7 @@
         <!-- HOW DOES IT WORK SECTION -->
 
         <section class="w-full bg-primary-200">
-            <div class="container mx-auto pt-20 pb-24 px-8 md:px-12 bg-primary-200">
+            <div class="container mx-auto pt-20 pb-24 px-4 md:px-12 bg-primary-200">
                 <h3 class="text-center text-primary-900 mb-4 uppercase">How does it work</h3>
                 <hr class="border-t-2 border-primary-300 w-48 mx-auto my-4">
                 <h2 class="text-4xl mb-8 font-bold text-center text-primary-900 pt-2">3 simple steps</h2>
@@ -229,7 +232,7 @@
         <!-- OFFERS -->
 
         <section class="w-full bg-gray-100">
-            <div class="container mx-auto h-full py-20 px-8 bg-gray-100">
+            <div class="container mx-auto h-full py-20 px-4 bg-gray-100">
                 <h3 class="text-center text-primary-900 mb-4 uppercase">Offering</h3>
                 <hr class="border-t-2 border-secondary-300 w-40 mx-auto my-4">
                 <h2 class="text-4xl mb-8 font-bold text-center text-primary-900 pt-2">
