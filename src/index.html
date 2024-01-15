@@ -19,11 +19,11 @@
 
 <body class="bg-primary-900 tracking-wide leading-160%">
 
-    <header class="w-full pb-24 px-4 text-gray-100 font-light relative lg:pt-24">
+    <!-- <header class="w-full pb-24 px-4 text-gray-100 font-light relative lg:pt-24">
         <div class="absolute inset-0 z-0"
             style="background-image: linear-gradient(90deg, rgba(102,69,232,1.00) 8%, rgba(126,73,244,1.00) 53%, rgba(149,74,244,1.00) 89%); background-position: center center; background-size: cover;">
         </div>
-        <!-- ThreatShield logo on smaller screens -->
+        
         <div class="container mx-auto relative z-10 flex flex-col lg:flex-row lg:items-center">
             <img src="./logos/threatshield_white.svg" alt="ThreatShield Logo"
                 class="lg:hidden w-44 rounded-sm h-auto border-2 px-4 py-4 mt-6 mb-12">
@@ -31,7 +31,7 @@
                 <img src="./img/shiba-hero.png" alt="Hero image" class="w-full h-full object-cover">
             </div>
             <div class="w-full lg:w-1/2">
-                <!-- ThreatShield logo on larger screens -->
+               
                 <img src="./logos/threatshield_white.svg" alt="ThreatShield Logo"
                     class="hidden lg:block w-44 rounded-sm h-auto border-2 px-4 py-4 my-12 lg:mt-0">
                 <h1 class="text-4xl w-full font-bold pt-10 lg:pt-0 md:text-5xl lg:text-6xl xl:text-7xl">
@@ -52,7 +52,43 @@
                 </div>
             </div>
         </div>
+    </header> -->
+
+    <header class="w-full text-gray-100 font-light relative">
+        <div class="absolute inset-0 z-0"
+            style="background-image: linear-gradient(90deg, rgba(102,69,232,1.00) 8%, rgba(126,73,244,1.00) 53%, rgba(149,74,244,1.00) 89%); background-position: center center; background-size: cover;">
+        </div>
+        <!-- ThreatShield logo on smaller screens -->
+        <div class="relative z-10 mx-4 lg:mx-0 flex flex-col lg:flex-row">
+            <img src="./logos/threatshield_white.svg" alt="ThreatShield Logo"
+                class="lg:hidden w-44 rounded-sm h-auto border-2 px-4 py-4 mt-6 mb-12">
+            <div class="w-full lg:w-1/2 h-60vmin bg-cover">
+                <img src="./img/shiba-hero.png" alt="Hero image" class="w-full h-full object-cover">
+            </div>
+            <!-- ThreatShield logo on larger screens -->
+            <div class="w-full my-auto py-8 lg:ml-12 lg:mr-6 lg:w-1/2">
+                <img src="./logos/threatshield_white.svg" alt="ThreatShield Logo"
+                    class="hidden lg:block w-44 rounded-sm h-auto border-2 px-4 py-4 my-12 lg:mt-0">
+                <h1 class="text-4xl w-full font-bold pt-2 lg:pt-0 md:text-5xl lg:text-6xl xl:text-7xl">
+                    Protect your business from security threats
+                </h1>
+                <p class="text-2xl font-light mt-6 mb-12 md:text-1xl lg:text-3xl">
+                    Identify and mitigate potential security threats with ThreatShield's threat modelling service</p>
+                    <a href="mailto:threatshield@inspired.consulting"
+                        class="block sm:w-full lg:inline bg-primary-800 text-white text-center tracking-wider py-4 px-6 rounded hover:bg-primary-700">
+                        Send us an e-mail</a>
+                <div class="mt-12">
+                    <span class="hover:text-primary-900">
+                        <img src="./logos/github-mark-white.png" alt="GitHub Logo" class="w-6 h-6 mx-1 inline-block">
+                        <a href="https://github.com/inspired-consulting/threat_shield" target="_blank"
+                            class="underline underline-offset-4 active:text-primary-100 hover:primary-300">
+                            Fork us on GitHub</a>
+                    </span>
+                </div>
+            </div>
+        </div>
     </header>
+
 
 
     <main>
@@ -243,13 +279,13 @@
                     <!-- CARD 1 -->
 
                     <div
-                        class="max-w-sm rounded overflow-hidden border-2 border-gray-300 mb-8 pt-6 mx-auto sm:mx-auto md:mx-auto lg:mx-0 lg:mb-0 lg:mr-6">
+                        class="max-w-sm rounded overflow-hidden border-2 border-gray-300 mb-8 pt-6 mx-auto w-full lg:mx-0 lg:mb-0 lg:mr-6">
                         <div class="px-6 py-2 flex flex-col justify-between h-full">
                             <div>
                                 <div class="font-bold text-xl mb-6 text-primary-900 text-center">
                                     Engage with us and ask questions about ThreatShield
                                 </div>
-                                <hr class="border-t-2 border-gray-300 mx-auto my-4">
+                                <hr class="border-t-2 border-gray-200 mx-auto my-4">
                                 <ul class="list-none text-primary-900 text-lg">
                                     <li class="flex items-center mb-4">
                                         <div class="icon-container">
@@ -285,13 +321,13 @@
                     <!-- CARD 2 -->
 
                     <div
-                        class="max-w-sm rounded overflow-hidden border-2 border-gray-300 mb-8 pt-6 mx-auto sm:mx-auto md:mx-auto lg:mx-0 lg:mb-0 lg:mr-6">
+                        class="max-w-sm rounded overflow-hidden border-2 border-gray-300 mb-8 pt-6 mx-auto w-full lg:mx-0 lg:mb-0 lg:mr-6">
                         <div class="px-6 py-2 flex flex-col justify-between h-full">
                             <div>
                                 <div class="font-bold text-xl mb-6 text-primary-900 text-center">
                                     More control: Discover our open source self-hosting solution
                                 </div>
-                                <hr class="border-t-2 border-gray-300 mx-auto my-4">
+                                <hr class="border-t-2 border-gray-200 mx-auto my-4">
                                 <ul class="list-none text-primary-900 text-lg">
                                     <li class="flex items-center mb-4">
                                         <div class="icon-container">
@@ -338,7 +374,7 @@
                     <!-- CARD 3 -->
 
                     <div
-                        class="max-w-sm rounded overflow-hidden border-2 border-gray-300 mr-4 mb-8 pt-6 mx-auto sm:mx-auto md:mx-auto lg:mx-0 lg:mb-0 lg:mr-6">
+                        class="max-w-sm rounded overflow-hidden border-2 border-gray-300 mb-8 pt-6 mx-auto w-full lg:mx-0 lg:mb-0 lg:mr-6">
                         <div class="px-6 py-2 flex flex-col justify-between h-full">
                             <div>
                                 <div class="font-bold text-xl mb-6 text-primary-900 text-center">
@@ -346,7 +382,7 @@
                                     Threat modelling workshops
                                 </div>
 
-                                <hr class="border-t-2 border-gray-300 mx-auto my-4">
+                                <hr class="border-t-2 border-gray-200 mx-auto my-4">
                                 <ul class="list-none text-primary-900 text-lg">
                                     <li class="flex items-center mb-4">
                                         <div class="icon-container">
