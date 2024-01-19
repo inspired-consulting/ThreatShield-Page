@@ -33,7 +33,13 @@ html {
     height: 20px;
 }
 
-@keyframes marquee {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
