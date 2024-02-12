@@ -4,80 +4,84 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="ThreatShield - Model and analyse threats to your IT systems" />
-    <meta name="robots" content="index, follow" />
-    <title>ThreatShield</title>
-    <script type="module" crossorigin src="./js/main.js" defer></script>
-    <link rel="stylesheet" href="./css/main.css" />
-    {{> doc_head}}
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="ThreatShield - Model and analyse threats to your IT systems" />
+        <meta name="robots" content="index, follow" />
+        <title>ThreatShield</title>
+        <script type="module" crossorigin src="./js/main.js" defer></script>
+        <link rel="stylesheet" href="./css/main.css" />
+        {{> doc_head}}
 
-</head>
-
-
-<body class="xbg-primary-900 tracking-wide leading-160%"
-    style="background-image: linear-gradient(90deg, rgba(102,69,232,1.00) 8%, rgba(126,73,244,1.00) 53%, rgba(149,74,244,1.00) 89%); background-position: center center; background-size: cover;">
-</body>
-
-<!-- BANNER -->
-<div
-    class="bg-secondary-400 text-secondary-900 text-center font-semibold py-2 px-8 w-full flex items-center justify-center space-x-2 text-xs">
-    Free interactive workshop for first requests!
-</div>
+    </head>
 
 
-<!-- TOP NAVIGATION -->
+    <body class="xbg-primary-900 tracking-wide leading-160%"
+        style="background-image: linear-gradient(90deg, rgba(102,69,232,1.00) 8%, rgba(126,73,244,1.00) 53%, rgba(149,74,244,1.00) 89%); background-position: center center; background-size: cover;">
+    </body>
 
-<!-- MOBILE NAVIGATION -->
-<nav id="mobileNav" class="text-gray-100 text-xl py-3 px-4 sticky top-0 z-50 flex flex-row lg:hidden"
-    style="background-image: linear-gradient(90deg, rgba(102,69,232,1.00) 8%, rgba(126,73,244,1.00) 53%, rgba(149,74,244,1.00) 89%); background-position: center center; background-size: cover;">
-
-    <!-- Threatshield logo -->
-    <a href="#" class="mr-auto">
-        <img src="./logos/threatshield_white.svg" alt="ThreatShield Logo" class="w-36 rounded-sm h-auto border-2 p-3">
-    </a>
-
-    <!-- Menu Button -->
-    <button class="text-gray-100 ml-auto" onclick="toggleMobileMenu()">
-        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-    </button>
-
-    <!-- Navigation links for mobile -->
-    <div id="mobileMenuItems" class="hidden absolute top-full right-0 bg-primary-400 p-6 -mt-0.5 space-y-4"
-        style="background-image: linear-gradient(45deg, rgba(126,73,244,1.00) 2%, rgba(149,74,244,1.00) 50%); background-position: center center; background-size: cover;">
-        <a href="#preview-web-app" class="block text-gray-100">App Preview</a>
-        <a href="#list-of-benefits" class="block text-gray-100">Your Benefits</a>
-        <a href="#how-does-it-work" class="block text-gray-100">How It Works</a>
-        <a href="#offers" class="block text-gray-100">Offering</a>
+    <!-- BANNER -->
+    <div
+        class="bg-secondary-400 text-secondary-900 text-center font-semibold py-2 px-8 w-full flex items-center justify-center space-x-2 text-xs">
+        Free interactive workshop for first requests!   
     </div>
-</nav>
 
 
-<!-- LARGE SCREEN NAVIGATION -->
+    <!-- TOP NAVIGATION -->
 
-<nav id="navbar" class="text-gray-100 py-3 px-4 sticky top-0 z-50 flex flex-row hidden lg:flex lg:space-x-4"
-    style="background-image: linear-gradient(90deg, rgba(102,69,232,1.00) 8%, rgba(126,73,244,1.00) 53%, rgba(149,74,244,1.00) 89%); background-position: center center; background-size: cover;">
+    <!-- MOBILE NAVIGATION -->
+    <nav id="mobileNav" class="text-gray-100 text-xl py-3 px-4 sticky top-0 z-50 flex flex-row lg:hidden"
+        style="background-image: linear-gradient(90deg, rgba(102,69,232,1.00) 8%, rgba(126,73,244,1.00) 53%, rgba(149,74,244,1.00) 89%); background-position: center center; background-size: cover;">
 
-    <!-- Threatshield logo -->
-    <a href="#" class="lg:mr-auto">
-        <img src="./logos/threatshield_white.svg" alt="ThreatShield Logo" class="w-36 rounded-sm h-auto border-2 p-3">
-    </a>
+        <!-- Threatshield logo -->
+        <a href="#" class="mr-auto">
+            <img src="./logos/threatshield_white.svg" alt="ThreatShield Logo"
+                class="w-36 rounded-sm h-auto border-2 p-3">
+        </a>
 
-    <!-- Navigation links -->
-    <div id="menuItems" class="hidden lg:flex lg:flex-row lg:flex-wrap lg:items-center lg:space-x-4">
-        <a href="#preview-web-app" class="block lg:hover:underline lg:hover:underline-offset-8 lg:px-4 lg:py-2">App
-            Preview</a>
-        <a href="#list-of-benefits" class="block lg:hover:underline lg:hover:underline-offset-8 lg:px-4 lg:py-2">Your
-            Benefits</a>
-        <a href="#how-does-it-work" class="block lg:hover:underline lg:hover:underline-offset-8 lg:px-4 lg:py-2">How It
-            Works</a>
-        <a href="#offers" class="block lg:hover:underline lg:hover:underline-offset-8 lg:px-4 lg:py-2">Offering</a>
-    </div>
-</nav>
+        <!-- Menu Button -->
+        <button id="menuToggle" class="text-gray-100 ml-auto" onclick="toggleMobileMenu()">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+
+        <!-- Navigation links for mobile -->
+        <div id="mobileMenuItems"
+            class="hidden absolute top-full right-0 bg-primary-400 p-6 -mt-0.5 space-y-4"
+            style="background-image: linear-gradient(45deg, rgba(126,73,244,1.00) 2%, rgba(149,74,244,1.00) 50%); background-position: center center; background-size: cover;">
+            <a href="#preview-web-app" class="block text-gray-100" onclick="closeMobileMenu()">App Preview</a>
+            <a href="#list-of-benefits" class="block text-gray-100" onclick="closeMobileMenu()">Your Benefits</a>
+            <a href="#how-does-it-work" class="block text-gray-100" onclick="closeMobileMenu()">How It Works</a>
+            <a href="#offers" class="block text-gray-100" onclick="closeMobileMenu()">Offering</a>
+            <a href="#about" class="block text-gray-100" onclick="closeMobileMenu()">About us</a>
+            <a href="#contact" class="block text-gray-100" onclick="closeMobileMenu()">Get In Contact</a>
+        </div>
+    </nav>
+
+    <!-- LARGE SCREEN NAVIGATION -->
+
+    <nav id="navbar" class="text-gray-100 py-3 px-4 sticky top-0 z-50 flex flex-row hidden lg:flex lg:space-x-4"
+        style="background-image: linear-gradient(90deg, rgba(102,69,232,1.00) 8%, rgba(126,73,244,1.00) 53%, rgba(149,74,244,1.00) 89%); background-position: center center; background-size: cover;">
+
+        <!-- Threatshield logo -->
+        <a href="#" class="lg:mr-auto">
+            <img src="./logos/threatshield_white.svg" alt="ThreatShield Logo" class="w-36 rounded-sm h-auto border-2 p-3">
+        </a>
+
+        <!-- Navigation links -->
+        <div id="menuItems" class="hidden lg:flex lg:flex-row lg:flex-wrap lg:items-center lg:space-x-4">
+            <a href="#preview-web-app" class="block lg:hover:underline lg:hover:underline-offset-8 lg:px-4 lg:py-2">App
+                Preview</a>
+            <a href="#list-of-benefits" class="block lg:hover:underline lg:hover:underline-offset-8 lg:px-4 lg:py-2">Your
+                Benefits</a>
+            <a href="#how-does-it-work" class="block lg:hover:underline lg:hover:underline-offset-8 lg:px-4 lg:py-2">How It
+                Works</a>
+            <a href="#offers" class="block lg:hover:underline lg:hover:underline-offset-8 lg:px-4 lg:py-2">Offering</a>
+        </div>
+    </nav>
 
 <script>
     function toggleMenu() {
@@ -88,6 +92,24 @@
     function toggleMobileMenu() {
         var mobileMenuItems = document.getElementById('mobileMenuItems');
         mobileMenuItems.classList.toggle('hidden');
+    }
+
+    function toggleMobileMenu() {
+        var mobileMenu = document.getElementById("mobileMenuItems");
+        mobileMenu.classList.toggle("hidden");
+
+        var menuToggle = document.getElementById("menuToggle");
+        menuToggle.innerHTML = mobileMenu.classList.contains("hidden") ?
+            '<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>' :
+            '<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>';
+    }
+
+    function closeMobileMenu() {
+        var mobileMenu = document.getElementById("mobileMenuItems");
+        mobileMenu.classList.add("hidden");
+
+        var menuToggle = document.getElementById("menuToggle");
+        menuToggle.innerHTML = '<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>';
     }
 </script>
 
@@ -111,7 +133,8 @@
                 Identify and mitigate potential security threats with ThreatShield's threat modelling service</p>
             <a href="mailto:threatshield@inspired.consulting"
                 class="block sm:w-full lg:inline bg-primary-800 text-white text-center tracking-wider py-4 px-6 rounded hover:bg-primary-700 active:bg-primary-800 transition-all">
-                Send us an e-mail</a>
+                <span class="align-middle">Send us an e-mail</span>
+            </a>
             <div class="mt-12 pb-6">
                 <span class="hover:text-primary-900">
                     <img src="./logos/github-mark-white.png" alt="GitHub Logo" class="w-6 h-6 mx-1 inline-block">
@@ -147,7 +170,7 @@
 
     <!-- LIST OF BENEFITS -->
 
-    <section class="w-full bg-gray-100">
+    <section id="list-of-benefits" class="w-full bg-gray-100">
         <div class="container mx-auto h-full py-20 pb-24 px-4 bg-gray-100">
             <h3 class="text-center text-primary-900 mb-4 uppercase">Your benefits</h3>
             <hr class="border-t-2 border-secondary-300 w-40 mx-auto my-4">
@@ -220,7 +243,7 @@
 
     <!-- HOW DOES IT WORK -->
 
-    <section class="w-full bg-primary-200">
+    <section id="how-does-it-work" class="w-full bg-primary-200">
         <div class="container mx-auto h-full py-20 px-4 bg-primary-200">
             <h3 class="text-center text-primary-900 mb-4 uppercase">HOW DOES IT WORK</h3>
             <hr class="border-t-2 border-primary-300 w-48 mx-auto my-4">
@@ -270,7 +293,8 @@
                             Participate in a 2-hour hands-on workshop using your system as a case study to create an
                             initial threat model and learn how to effectively use ThreatShield.</p>
                     </div>
-                    <div class="border px-4 py-2 mt-6 mb-2 rounded-md border-primary-400 my-2 text-primary-600 text-center">
+                    <div
+                        class="border px-4 py-2 mt-6 mb-2 rounded-md border-primary-400 my-2 text-primary-600 text-center">
                         <span class="text-xs font-semibold">Be quick:</span><br>
                         Free of charge for first requests
                     </div>
@@ -459,28 +483,53 @@
         </div>
     </section>
 
-    <!-- CONTACT US -->
-   
-    <section class="bg-gray-100 pt-12 pb-16">
+      <!-- ABOUT US -->
+
+      <section id="about" class="w-full bg-primary-200 flex flex-col pt-4 items-center lg:flex-row">
+        <div class="container flex flex-row justify-center mx-auto">
+            <div class="mx-auto px-4 w-full lg:px-8 flex flex-col justify-center">
+                <div>
+                    <h3 class="text-center lg:text-left text-primary-900 px-2 uppercase">About us</h3>
+                    <hr class="border-t-2 border-primary-500 w-24 mx-auto my-4 lg:mx-0">
+                </div>
+                <h2 class="text-4xl mb-8 font-bold text-center lg:text-left text-primary-900 pt-2">
+                    Learn who is behind ThreatShield
+                </h2>
+                <div class="text-center lg:text-left">
+                    <a href="https://inspired.consulting/en/about" target="_blank"
+                    class="block md:inline-block bg-primary-500 external-link text-white tracking-wider py-4 px-6 rounded hover:bg-primary-700 active:bg-primary-500 transition-all">
+                    Get to know the team
+                </a>                
+                </div>
+            </div>
+            <div class="lg:w-1/2 h-96 bg-contain bg-no-repeat"
+                style="background-image: url('./img/Shiba-ponting-left-hero.png');">
+            </div>
+        </div>
+    </section>
+
+     <!-- CONTACT US -->
+
+     <section id="contact" class="bg-gray-100 pt-16 pb-16">
         <div class="container mx-auto">
             <div class="px-4 lg:pr-10 text-center">
                 <h3 class="text-primary-900 mb-4 uppercase">Ready to protect your business?</h3>
                 <hr class="border-t-2 border-secondary-400 mx-auto w-80 my-4">
-                <h2 class="text-4xl mb-8 font-bold text-primary-900 py-2">
+                <h2 class="text-4xl font-bold text-primary-900 py-2 ">
                     Any questions?<br>
                     We would love to hear from you
                 </h2>
+                <div class="flex justify-center">
+                    <img src="img/chatbot.gif" alt="Animated icon" class="w-28 h-28 my-4">
+                </div>
                 <a href="mailto:threatshield@inspired.consulting"
                     class="block md:inline-block bg-primary-500 text-white tracking-wider py-4 px-6 rounded hover:bg-primary-700 active:bg-primary-500 transition-all">
-                    Send us an e-mail
+                    <span class="align-middle">Send us an e-mail</span>
                 </a>
-            </div>
-            <div class="flex justify-center">
-                <img src="img/chatbot.gif" alt="Animated Icon" class="w-40 h-40 my-4">
             </div>
         </div>
     </section>
-    
+
 </main>
 
 <div>

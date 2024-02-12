@@ -43,3 +43,7 @@ html {
     transition: opacity 0.5s ease-in-out;
 }
 
+.external-link::after {
+    content: "\2197"; 
+    margin-left: 0.2em;
+}
