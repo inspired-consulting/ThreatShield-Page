@@ -11,7 +11,7 @@ export default {
                 imprint: new URL("./src/imprint.html", import.meta.url).pathname,
                 terms: new URL("./src/terms.html", import.meta.url).pathname,
                 privacy: new URL("./src/privacy.html", import.meta.url).pathname,
-                docs: new URL("./src/docs.html", import.meta.url).pathname,
+                docs: new URL("./src/documentation.html", import.meta.url).pathname,
             },
         },
     },
