@@ -43,10 +43,44 @@ html {
     transition: opacity 0.5s ease-in-out;
 }
 
-.external-link::after {
-    content: "\2197"; 
-    margin-left: 0.2em;
-}
+/* ABOUT US - Button with Icon Animation */
+
+@media (min-width: 768px) { 
+   
+        .ts-external-link {
+            text-align: center;
+            width: auto; 
+            overflow: hidden; /* prevents the pseudo element from being visible outside the button */
+            position: relative; 
+        }
+
+        .ts-external-link span {
+            display: inline-block;
+            position: relative;
+            transition: padding-right 0.5s;
+        }
+
+        .ts-external-link::after {
+            content: '\2197';
+            position: absolute;
+            opacity: 0;
+            top: 50%; 
+            right: -20px; /* Hide icon outside the button */
+            transform: translateY(-50%);
+            transition: opacity 0.5s, right 0.5s;
+        }
+
+        .ts-external-link:hover {
+            width: auto;
+        }
+
+        .ts-external-link:hover::after {
+            opacity: 1;
+            right: 5px; /* Position next to the button text */
+        }
+
+    }
+    
 
 /* DOCUMENT - List item marker */
 
