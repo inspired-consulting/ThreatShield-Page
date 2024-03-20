@@ -15,33 +15,61 @@ html {
     }
 }
 
-/* Initially hide animated icon */
-.ts-animated-icon {
-    display: none;
-}
+/* Header Titel Effect*/
 
-/* Show animated icon on card hover */
-.ts-hover-trigger:hover .ts-static-icon {
-    display: none;
-}
+    #changing-word {
+        display: block;
+    } 
 
-.ts-hover-trigger:hover .ts-animated-icon {
-    display: block;
-}
+    .letter {
+        display: inline-block;
+        position: relative;
+        transform: translateZ(25px);
+        transform-origin: 0% 50% 25px;
+    }
 
-.icon-container {
-    height: 20px;
-}
+    .letter.out {
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .letter.behind {
+        transform: rotateX(-90deg);
+    }
 
-.fade-out {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
+    .letter.in {
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s linear 0.38s, opacity 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    /* Initially hide animated icon */
+    .ts-animated-icon {
+        display: none;
+    }
 
-.fade-in {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-}
+    /* Show animated icon on card hover */
+    .ts-hover-trigger:hover .ts-static-icon {
+        display: none;
+    }
+
+    .ts-hover-trigger:hover .ts-animated-icon {
+        display: block;
+    }
+
+    .icon-container {
+        height: 20px;
+    }
+
+    .fade-out {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .fade-in {
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+    }
 
 /* ABOUT US - Button with Icon Animation */
 
@@ -80,7 +108,7 @@ html {
         }
 
     }
-    
+
 
 /* DOCUMENT - List item marker */
 
