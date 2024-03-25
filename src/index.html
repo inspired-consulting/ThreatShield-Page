@@ -67,17 +67,24 @@
 
         <!-- Navigation links -->
         <div id="menuItems" class="hidden lg:flex lg:flex-row lg:flex-wrap lg:items-center lg:space-x-4">
-            <a href="#preview-web-app" class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2 lg:px-4 lg:py-2">App
+            <a href="#preview-web-app"
+                class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2 lg:px-4 lg:py-2">App
                 Preview</a>
             <a href="#list-of-benefits"
                 class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2 lg:px-4 lg:py-2">Your
                 Benefits</a>
-            <a href="#how-does-it-work" class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2  lg:px-4 lg:py-2">How
+            <a href="#how-does-it-work"
+                class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2  lg:px-4 lg:py-2">How
                 It
                 Works</a>
-            <a href="#offers" class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2  lg:px-4 lg:py-2">Offering</a>
-            <a href="#about" class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2  lg:px-4 lg:py-2">About Us</a>
-            <a href="#contact" class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2 lg:px-4 lg:py-2">Get in
+            <a href="#offers"
+                class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2  lg:px-4 lg:py-2">Offering</a>
+            <a href="#about"
+                class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2  lg:px-4 lg:py-2">About
+                Us</a>
+            <a href="#contact"
+                class="block lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2 lg:px-4 lg:py-2">Get
+                in
                 Contact</a>
         </div>
     </nav>
@@ -120,13 +127,15 @@
         </div>
         <div class="relative z-10 lg:mx-0 flex flex-col lg:flex-row">
             <div class="hidden lg:flex justify-center items-center w-full lg:w-1/2 h-60vmin bg-cover">
-                <img src="./img/shiba-hero-freigestellt-2.webp" alt="Hero image" class="w-full h-full object-cover overflow-visible" style="max-width: 70%;">
+                <img src="./img/shiba-hero-freigestellt-2.1.webp" alt="Hero image"
+                    class="w-full h-full object-cover overflow-visible" style="max-width: 70%;">
             </div>
             <div class="lg:hidden">
                 <img src="./img/shiba-hero.png" alt="Hero image" class="w-full h-full object-cover">
             </div>
             <div class="w-full px-4 my-auto lg:px-8 lg:mx-auto lg:w-1/2">
-                <h1 class="text-4xl/normal w-full font-bold pt-6 lg:pt-2 md:text-5xl/normal lg:text-6xl/normal xl:text-7xl/normal">
+                <h1
+                    class="text-4xl/normal w-full font-bold pt-6 lg:pt-2 md:text-5xl/normal lg:text-6xl/normal xl:text-7xl/normal">
                     Protect Your
                     <span id="changing-word" class="text-primary-700 ts-hero-title">Business</span>
                     <span>from Security Threats</span>
@@ -148,7 +157,7 @@
             </div>
         </div>
     </header>
-    
+
 
 
     <main>
@@ -256,7 +265,6 @@
                 </h2>
                 <div class="flex flex-col lg:flex-row items-center lg:justify-between pt-6">
 
-
                     <!-- CARD 1 -->
 
                     <div
@@ -278,6 +286,8 @@
                         </div>
                     </div>
 
+                    <div class="arrow"></div>
+    
                     <!-- CARD 2 -->
 
                     <div
@@ -304,7 +314,6 @@
                         </div>
                     </div>
 
-
                     <!-- CARD 3 -->
 
                     <div
@@ -325,6 +334,7 @@
                                 operations, empowering your team to manage threats autonomously.</p>
                         </div>
                     </div>
+                   
                 </div>
         </section>
 
@@ -551,46 +561,46 @@
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             var words = [
                 "IT-Systems",
                 "Assets",
                 "Data",
                 "Business"
             ];
-    
+
             var changingWord = document.getElementById("changing-word");
             var currentWordIndex = 0;
-    
+
             // Start des Effekts nach einer Verzögerung
-            setTimeout(function() {
+            setTimeout(function () {
                 rotateWord();
                 setInterval(rotateWord, 4000); // Wiederhole den Effekt alle 4 Sekunden
             }, 2000); // Verzögerung von 2 Sekunden (2000 Millisekunden)
-    
+
             function rotateWord() {
                 // Verstecke das aktuelle Wort
                 hideWord();
-    
+
                 // Aktualisiere das aktuelle Wort
                 currentWordIndex = (currentWordIndex + 1) % words.length;
-    
+
                 // Zeige das neue Wort an
                 showWord(words[currentWordIndex]);
             }
-    
+
             function hideWord() {
                 var letters = changingWord.querySelectorAll(".letter");
-                letters.forEach(function(letter, index) {
-                    setTimeout(function() {
+                letters.forEach(function (letter, index) {
+                    setTimeout(function () {
                         letter.classList.add("out");
                     }, index * 80);
                 });
             }
-    
+
             function showWord(word) {
                 changingWord.innerHTML = ""; // Leere das aktuelle Wort
-    
+
                 // Erstelle die Buchstaben für das neue Wort
                 for (var i = 0; i < word.length; i++) {
                     var letter = document.createElement("span");
@@ -598,10 +608,10 @@
                     letter.textContent = word[i];
                     changingWord.appendChild(letter);
                 }
-    
+
                 var newLetters = changingWord.querySelectorAll(".letter");
-                newLetters.forEach(function(letter, index) {
-                    setTimeout(function() {
+                newLetters.forEach(function (letter, index) {
+                    setTimeout(function () {
                         letter.classList.remove("behind");
                         letter.classList.add("in");
                     }, 340 + index * 80);
