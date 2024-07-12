@@ -43,6 +43,9 @@ html {
         opacity: 1;
         transition: visibility 0s linear 0.38s, opacity 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
+
+
+/* YOUR BENEFIT SECTION: Icon animation*/
     
     /* Initially hide animated icon */
     .ts-animated-icon {
@@ -72,7 +75,8 @@ html {
         transition: opacity 0.5s ease-in-out;
     }
 
-/* ABOUT US - Button with Icon Animation */
+
+/* ABOUT US: Button with Icon Animation */
 
 @media (min-width: 768px) { 
    
