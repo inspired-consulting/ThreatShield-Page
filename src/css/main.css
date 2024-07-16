@@ -79,8 +79,13 @@ html {
 /* OFFERS */
 
 .ts-card-shadow {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 36px;
   }
+
+  .ts-img-shadow {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px;
+}
+
 
 /* ABOUT: Button with Icon Animation */
 
